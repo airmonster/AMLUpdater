@@ -8,12 +8,12 @@ library(raster)
 library(RNetCDF)
 library(doParallel)
 
-# FROM-GLC 2015v2 download web URL, shared by Tsinghua University.
+# FROM-GLC version2 (2015_v1) download web URL, shared by Tsinghua University.
 GLCURL="http://data.ess.tsinghua.edu.cn/data/temp/Fromglc2015tif/"
 # FROM-GLC local data storage path.
-DATDIR="G:\\Real_Data\\GLC\\GLC2015\\"
+DATDIR="\\path\\to\\GLC2015\\"
 # Local WRF geo_em path.
-GEODIR="D:\\GEOEM\\"
+GEODIR="\\path\\to\\GEOEM\\"
 case="CDTEST01"
 
 NSL=seq(0,80,10) #lat
