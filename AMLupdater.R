@@ -10,10 +10,8 @@ library(doParallel)
 
 # FROM-GLC version2 (2015_v1) download web URL, shared by Tsinghua University.
 GLCURL="http://data.ess.tsinghua.edu.cn/data/temp/Fromglc2015tif/"
-# FROM-GLC local data storage path.
-DATDIR="\\path\\to\\GLC2015\\"
-# Local WRF geo_em path.
-GEODIR="\\path\\to\\GEOEM\\"
+DATDIR="G:\\Real_Data\\GLC\\GLC2015\\"
+GEODIR="D:\\GEOEM\\"
 case="CDTEST01"
 
 NSL=seq(0,80,10) #lat
@@ -128,8 +126,8 @@ process.lu.par=function(i,jmx,lutype){
         ntlu=ntlu*0
         
         ntlu[1]=length(subset(clu,clu==23))/length(clu) #
-        ntlu[2]=length(subset(clu,clu==21))/length(clu) #
-        #ntlu[3]=length(subset(clu,clu==3))/length(clu) #
+        ntlu[2]=length(subset(clu,clu==21 | clu==14))/length(clu) #
+        ntlu[3]=length(subset(clu,clu==24))/length(clu) #
         ntlu[4]=length(subset(clu,clu==22))/length(clu) #
         ntlu[5]=length(subset(clu,clu==25 | clu==26))/length(clu) #
         ntlu[6]=length(subset(clu,clu==41))/length(clu) #
