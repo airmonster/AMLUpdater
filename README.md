@@ -1,4 +1,4 @@
-# 自留地 ｜AMLUpdater  
+# AMLUpdater  
 
 ## A program used for update wrf land use data with high resolution land use data, by Airmonster team from Chengdu Academy of Environmental Sciences.  
 
@@ -30,5 +30,3 @@ In our tests, after updating the land use data, correlation of temperature were 
 
 ## Author
 lcw@cdaes.cn
-
-[备案号(蜀ICP备09020397号)](http://beian.miit.gov.cn)
